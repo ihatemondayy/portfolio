@@ -11,6 +11,11 @@
     font-display: swap;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 .aboutme_container {
     display: flex;
     background-color: #000000;
