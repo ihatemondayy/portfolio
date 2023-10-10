@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="3_projects.css" />
+    <script>
+        function menuFunction() {
+           document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+  </head>
+  <body>
+    <div class="background">
+    <div class="projects_container">
+        <div class="headtext">
+            <hr class="line_left" />
+            <div class="dropdown">
+                <button onclick="menuFunction()" class="dropbtn">PROJECTS</button>
+                <div id="myDropdown" class="dropdown_content">
+                    <a href="2_aboutme.html">ABOUT ME</a>
+                    <a href="3_projects.html">PROJECTS</a>
+                </div>
+              </div>
+            <hr class="line_right" />
+        </div>
+        <div class="projList_container">
+            <div class="whbh_container">
+                <img src="../components/whbh.svg" />
+                <div class="whbh_textContainer">
+                    <div class="whbh_title">&lt;WORK HARD BUY HARD&gt;</div>
+                    <div class="whbh_yr">2022/11~ <br />
+                        Team Leader, FE, Design<br />
+                        React ∙ Spring
+                    </div>
+                    <div class="whbh_detail">
+                        &nbsp;비트코인 모의투자를 위한 웹사이트입니다. 첫 팀 프로젝트인 만큼, '협업'을 가장 중요한 가치로 여겨 github와 notion을 통한 소통을 적극적으로 병행하고 있습니다. 전체 디자인과 FE 파트 담당, 동시에 팀장으로서 전체 팀원을 책임지는 역할을 맡아 스스로가 크게 성장할 수 있었습니다. 현재 Figma 프로토타입 제작이 완료된 상태이며, 2023 겨울 완성을 목표로 하고 있습니다.
+                    </div>
+                    <button onClick="window.open('https://www.figma.com/file/DF3CNW1X0GQtH9lq64bW3v/Bitcoin-WEB?type=design&node-id=0-1&mode=design&t=dQXT7keMcr8vmqLO-0', '_blank')">Figma</button>
+                    <button onclick="window.open('https://github.com/Hwan2000/Projec0.git', '_blank')">Github</button>
+                </div>
+            </div>
+            <div class="w2d_container">
+                <img src="../components/w2d.svg" />
+                <div class="w2d_textContainer">
+                    <div class="w2d_title">&lt;WHAT 2 DO&gt;</div>
+                    <div class="w2d_yr">2023/08 <br />
+                        SOLO project (in study)<br />
+                        VanillaJS ∙ HTML ∙ CSS ∙ React ∙ Vercel
+                    </div>
+                    <div class="w2d_detail">
+                        web에서 작동하는 todo list입니다. 할 일 추가, 삭제, 완료 등의 기본적인 기능은 일반적인 투두리스트와 같게 구현하였고, 페이지의 크기 조절에 따라 달라지는 반응형 웹사이트로 구현하였습니다. vanillaJS를 통해 작성한 코드를 React로 리팩토링하는 과정을 통해 두 기능 사이의 차이를 보다 디테일하게 파악할 수 있었습니다.
+                    </div>
+                    <button onclick="window.open('https://github.com/ihatemondayy/3-vanilla-js.git', '_blank')">Github(VanillaJS)</button>
+                    <button onclick="window.open('https://github.com/ihatemondayy/4-react-js.git', '_blank')">Github(React)</button>
+                </div>
+            </div>
+            <div class="cat_container">
+                <img src="../components/cat.svg" />
+                <div class="cat_textContainer">
+                    <div class="cat_title">&lt;You have received a CAT&gt;</div>
+                    <div class="cat_yr">2023/09<br />
+                        SOLO project (in study)<br />
+                        React ∙ CSS ∙ Vercel
+                    </div>
+                    <div class="cat_detail">
+                        web에서 FE 기능들을 구현한 메신저입니다. 통신 기능 없이 발신자와 수신자를 토글 기능으로 전환 가능토록 구현했고, CONTEXT API를 활용한 전역 변수의 개념을 보다 명확히 잡는 것을 최우선 목표로 하였습니다. react-router-dom을 이용해 각 페이지의 이동을 어떻게 하는 것이 효율적인가에 대해 고민해 보는 것 또한 단순 페이지 구현을 넘어서 세부 기능들을 갖춘 애플리케이션 제작의 기초 공부에 큰 도움이 되었습니다.
+                    </div>
+                    <button onclick="window.open('https://www.figma.com/file/EhJoWOfG34PQONs7dSMQA5/Untitled?type=design&node-id=0%3A1&mode=design&t=YtL6Gu2PauMrhZ75-1', '_blank')">Figma</button>
+                    <button onclick="window.open('https://github.com/ihatemondayy/5-react.js-hooks.git', '_blank')">Github</button>
+                </div>
+            </div>
+            <div class="trustme_container">
+                <img src="../components/trustme.svg" />
+                <div class="trustme_textContainer">
+                    <div class="trustme_title">&lt;TRUST ME...IM&gt;</div>
+                    <div class="trustme_yr">2023/09<br />
+                        SOLO project<br />
+                        VanillaJS ∙ HTML ∙ CSS ∙ Vercel
+                    </div>
+                    <div class="trustme_detail">
+                        현재 보고 계신 포트폴리오 사이트입니다. 블랙과 화이트, 고딕의 기본 조합에 그린과 픽셀 폰트를 사용해 포인트를 주었습니다. 추후 프로젝트들이 추가될 예정이기에 유지 및 보수가 용이하도록 HTML의 div 태그를 나누는 것에 대한 고민을 거쳐 코드를 작성하였습니다. 
+                    </div>
+                    <button onClick="window.open('https://www.figma.com/file/nzU8FQGLsxUl8RrCUHgdA8/Portfolio?type=design&node-id=0%3A1&mode=design&t=2O3x97iroCu5E9A0-1', '_blank')">Figma</button>
+                    <button onClick="window.open('https://github.com/ihatemondayy/portfolio.git', '_blank')">Github</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
