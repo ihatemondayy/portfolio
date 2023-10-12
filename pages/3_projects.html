@@ -2,37 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="3_projects.css" />
-    <script>
-        function menuFunction() {
-           document.getElementById("myDropdown").classList.toggle("show");
-        }
-    </script>
   </head>
-  <body onscroll="checkScroll()">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        function checkScroll() {
-            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollPosition <= 0) {
-                window.location.href = "2_aboutme.html";
-            }
-        }
-
-        $(window).on('wheel', function(e){
-        if(e.originalEvent.deltaY > 0) {
-            $(window).off('wheel');
-            setTimeout(function(){
-                $(window).on('wheel', arguments.callee);
-                checkScroll();
-            },1000);
-        }
-        });
-    </script>
-
+  <body>
     <div class="background">
     <div class="projects_container">
-        <div class="headtext">
+        <header class="headtext">
             <hr class="line_left" />
             <div class="dropdown">
                 <button onclick="menuFunction()" class="dropbtn">PROJECTS</button>
@@ -42,7 +16,7 @@
                 </div>
               </div>
             <hr class="line_right" />
-        </div>
+        </header>
         <div class="projList_container">
             <div class="whbh_container">
                 <img src="../components/whbh.svg" />

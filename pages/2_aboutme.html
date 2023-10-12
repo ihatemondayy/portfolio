@@ -2,23 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="2_aboutme.css" />
-    <script>
-        function menuFunction() {
-           document.getElementById("myDropdown").classList.toggle("show");
-        }
-    </script>
   </head>
-  <body onscroll="checkScroll()">
-    <script>
-        function checkScroll() {
-            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollPosition >= 500) {
-                window.location.href = "3_projects.html";
-            }
-        }
-    </script>
+  <body>
     <div class="aboutme_container">
-        <div class="headtext">
+        <header class="headtext">
           <hr class="line_left" />
           <div class="dropdown">
             <button onclick="menuFunction()" class="dropbtn">ABOUT ME</button>
@@ -28,7 +15,7 @@
             </div>
           </div>
           <hr class="line_right" />
-        </div>
+        </header>
         <div class="prof_container">
             <div class="prof_box">
                 <div class="prof_name">
