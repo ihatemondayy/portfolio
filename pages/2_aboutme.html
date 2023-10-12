@@ -8,7 +8,15 @@
         }
     </script>
   </head>
-  <body>
+  <body onscroll="checkScroll()">
+    <script>
+        function checkScroll() {
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollPosition >= 500) {
+                window.location.href = "3_projects.html";
+            }
+        }
+    </script>
     <div class="aboutme_container">
         <div class="headtext">
           <hr class="line_left" />

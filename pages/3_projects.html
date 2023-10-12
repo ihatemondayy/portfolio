@@ -8,7 +8,28 @@
         }
     </script>
   </head>
-  <body>
+  <body onscroll="checkScroll()">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function checkScroll() {
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollPosition <= 0) {
+                window.location.href = "2_aboutme.html";
+            }
+        }
+
+        $(window).on('wheel', function(e){
+        if(e.originalEvent.deltaY > 0) {
+            $(window).off('wheel');
+            setTimeout(function(){
+                $(window).on('wheel', arguments.callee);
+                checkScroll();
+            },1000);
+        }
+        });
+    </script>
+
     <div class="background">
     <div class="projects_container">
         <div class="headtext">
